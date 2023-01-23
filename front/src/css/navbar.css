@@ -1,0 +1,48 @@
+nav {
+    height: 100vh;
+    width: 15vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+
+.nav-profil {
+    height: 25vh;
+    width: 100%;
+    /* background-color: tr; */
+}
+
+.nav-fleche {
+    width: 100%;
+    height: 65vh;
+    /* background-color: brown; */
+}
+
+.nav-info {
+    width: 100%;
+    height: 35vh;
+    /* background-color: blue; */
+}
+
+.fleche_droit_nav {
+    position: relative;
+    left: 84%;
+    bottom: 50vh;
+    width: 30%;
+}
+
+.nav-photo-profil {
+    width: 30%;
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+    top: 20%;
+}
+
+.nav-item {
+    margin: 20% 0% 20% 0%;
+    /* padding-left: 12%; */
+}
+
+.nav-item:hover {
+    color: red;
+}
