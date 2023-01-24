@@ -1,33 +1,17 @@
-import React , {useState} from 'react';
-
-import Navbar from './component/navbar';
-import Home from './page/home';
-import Research from './page/research';
-import Serie from './page/Serie';
-import Movie from './page/Movie';
-import Category from './page/category';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Page from "./page/page";
 
 import "./css/style.css";
 import "./css/home.css";
 import "./css/navbar.css";
-
 function App() {
 
-  const [page , setPage] = useState('Home')
-
-  const changePage = (index) => {
-    setPage(index)
-  }
-
   return (
-    <div>
-      <Navbar changePage={changePage}/>
-      {page === 'Home' ? (<Home/>) : null}
-      {page === 'Research' ? (<Research/>) : null}
-      {page === 'Serie' ? (<Serie/>) : null}
-      {page === 'Movie' ? (<Movie/>) : null}
-      {page === 'Category' ? (<Category/>) : null}
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Page />}></Route>
+      </Routes>
+    </Router>
   );
 }
 
