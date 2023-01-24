@@ -8,19 +8,16 @@ nav {
 .nav-profil {
     height: 25vh;
     width: 100%;
-    /* background-color: tr; */
 }
 
 .nav-fleche {
     width: 100%;
     height: 65vh;
-    /* background-color: brown; */
 }
 
 .nav-info {
     width: 100%;
     height: 35vh;
-    /* background-color: blue; */
 }
 
 .fleche_droit_nav {
@@ -44,5 +41,5 @@ nav {
 }
 
 .nav-item:hover {
-    color: red;
+    color: rgb(129, 26, 26);
 }
