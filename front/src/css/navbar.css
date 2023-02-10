@@ -1,8 +1,9 @@
 nav {
     height: 100vh;
     width: 15vw;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
+    z-index: 2;
 }
 
 .nav-profil {
@@ -27,12 +28,18 @@ nav {
     width: 30%;
 }
 
-.nav-photo-profil {
+.profiler {
     width: 30%;
+}
+
+.profiler p:hover {
+    scale: 1.2;
+}
+
+.nav-photo-profil {
+    width: 100%;
     border-radius: 50%;
-    position: relative;
-    left: 35%;
-    top: 20%;
+   
 }
 
 .nav-item {

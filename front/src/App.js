@@ -1,21 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Cookies from 'universal-cookie';
 import Page from "./page/page";
-import Login from './page/auth';
-import Connexion from './page/connexion';
+import Login from './page/login';
 
 import "./css/style.css";
 import "./css/home.css";
 import "./css/navbar.css";
-function App() {
+import "./css/select.css";
+import "./css/login.css";
 
+function App() {
+  const cookies = new Cookies();
   return (
-    <Router>
-      <Routes>
-        <Route exact path='/' element={<Page />}></Route>
-        <Route exact path='/auth' element={<Login />}></Route>
-        <Route path='/connexion' element={<Connexion/>}></Route>
-      </Routes>
-    </Router>
+    <div>
+      {cookies.get('token') === undefined ? 
+      (
+        <Login/>
+      ) : (
+        <Page/>
+      )}
+    </div>
   );
 }
 

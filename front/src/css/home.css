@@ -1,0 +1,29 @@
+.home {
+    width: 100vw;
+}
+
+.home-poster {
+    width: 20vw;
+    height: 55vh;
+}
+
+.home-content {
+    width: 98vw;
+    overflow:auto;
+}
+
+.home-content::-webkit-scrollbar {
+    background-color: rgb(37, 37, 37);
+    height: 1vh;
+}
+
+.home-content::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+}
+
+.home-container-logo {
+    position: fixed;
+    right: 0%;
+    top: 0.5%;
+}

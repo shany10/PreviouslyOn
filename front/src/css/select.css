@@ -1,0 +1,60 @@
+.select {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background: linear-gradient(rgba(0, 0, 0, 0.8) 10%, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.6) 30%, transparent 100%);
+    position: fixed;
+    backdrop-filter: blur(7px);
+}
+
+.select-description {
+    width: 35vw;
+    height: 60vh;
+    overflow: auto;
+}
+
+.select-poster {
+    width: 25vw;
+    object-fit: cover;
+}
+
+.container-episode {
+    width: 20vw;
+    height: 50vh;
+    overflow:auto;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+.box-episode {
+    border-top: solid rgb(0, 0, 0) 2px;
+}
+
+.container-episode::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0 , 0.8);
+}
+
+.container-episode::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+.box-genre {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.select-box-croix {
+    margin: 0%;
+    padding: 0%;
+}
+
+.select-croix {
+    width: 3vw;
+}
+
+.select-croix:hover{
+    scale: 1.3;
+}
+
+.select-box-info {
+    height: 78vh;
+}
