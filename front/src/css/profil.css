@@ -1,0 +1,89 @@
+.box-user {
+    width: 80vw;
+    background-color: rgb(59, 59, 59);
+    margin: 0px auto;
+    margin-top: 3vh;
+    height: 35vh;
+}
+
+.profil-info img {
+    width: 30vh;
+    object-fit: cover;
+    height: 30vh;
+}
+
+.profil .profil-info .profil-photo {
+    border-radius: 50%;
+    position: relative;
+}
+
+.profil .input-photo {
+    display: none;
+}
+
+.profil .profil-info .box-show-xp p {
+    margin: 0% auto;
+}
+
+.profil-info .description-user .icone-telecharger {
+    width: 40px;
+    height: 40px;
+}
+
+.profil-box-shows {
+    width: 85%;
+    margin: 5% auto 0% auto;
+    
+}
+
+.profil-box-shows .profil-show {
+    /* height: 20vh; */
+    /* background-color:rgb(255, 0, 0); */
+    border-bottom: solid gray 2px;
+    
+}
+
+.profil-box-shows .profil-show p {
+    max-width: 80%;
+}
+
+.profil-shows-image {
+    width: 40%;
+    height: 30vh;
+}
+
+.profil-see-show {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: red;
+    padding: 2% 6%;
+    font-weight: bold;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.profil-see-show:active {
+    transform: translateY(10%);
+}
+
+.profil-box-shows .profil-show div {
+    width: 50%;
+    background-color: rgb(48, 48, 48);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.profil-remove-shows {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    /* position: relative;
+    bottom: 35%; */
+}
+
+.profil-remove-shows:hover {
+    scale: 1.2;
+}
+

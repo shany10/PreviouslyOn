@@ -7,12 +7,14 @@ import "./css/home.css";
 import "./css/navbar.css";
 import "./css/select.css";
 import "./css/login.css";
+import "./css/profil.css";
+import "./css/selectEpisodes.css"
 
 function App() {
   const cookies = new Cookies();
   return (
     <div>
-      {cookies.get('token') === undefined ? 
+      {cookies.get('user') === undefined ? 
       (
         <Login/>
       ) : (

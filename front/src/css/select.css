@@ -1,41 +1,24 @@
-.select {
+.select, .selectEpisodes {
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    /* background-color: rgba(0, 0, 0, 0.5); */
     background: linear-gradient(rgba(0, 0, 0, 0.8) 10%, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.6) 30%, transparent 100%);
     position: fixed;
     backdrop-filter: blur(7px);
+    top: 0px;
+    overflow:auto;
+
 }
 
 .select-description {
     width: 35vw;
-    height: 60vh;
+    height: 55vh;
     overflow: auto;
 }
 
 .select-poster {
     width: 25vw;
     object-fit: cover;
-}
-
-.container-episode {
-    width: 20vw;
-    height: 50vh;
-    overflow:auto;
-    /* background-color: rgba(0, 0, 0, 0.8); */
-}
-
-.box-episode {
-    border-top: solid rgb(0, 0, 0) 2px;
-}
-
-.container-episode::-webkit-scrollbar {
-    background-color: rgba(0, 0, 0 , 0.8);
-}
-
-.container-episode::-webkit-scrollbar-thumb {
-    background-color: red;
 }
 
 .box-genre {
@@ -57,4 +40,20 @@
 
 .select-box-info {
     height: 78vh;
+}
+
+.select .archiver {
+    width: 50px;
+    height: 50px;
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: 15%;
+}
+
+.select-archiver {
+    margin-top: 30%;
+}
+
+.select-archiver:hover {
+    scale: 1.2;
 }

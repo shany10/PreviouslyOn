@@ -8,24 +8,115 @@
     width: 5vw;
 }
 
-.container-login {
-    width: 40vw;
-    height: 40vh;
-    border: solid red 5px;
-    backdrop-filter: blur(7px);
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
-.container-login button {
-    background-color: red;
-    border-radius: 10px;
-    padding: 8%;
-}
-
 .pinceau {
     background-image: url('../img/kisspng-black-and-white-brush-painting-brush-stroke-5abbda192e6fb1.4642533115222605051902.png');
     background-size: cover;
     width: 25vw;
     
 }
+
+.login form {
+    width: 38vw;
+    height: auto;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.login form .box-input {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+
+} 
+
+.login form .box-input label {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-60%);
+    font-size: 20px;
+    color: rgb(161, 161, 161);
+    transition: 0.4s ease-out;
+    font-weight:500;
+}
+
+.login form .box-input:focus-within label,
+.login form .box-input.animation label{
+    top: 0px;
+    transform: translateY(-100%);
+}
+
+.login form .box-input:focus-within input,
+.login form .box-input.animation input{
+    border-color: #ff0000;
+}
+
+
+.login form .box-input input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 3px solid #000000;
+    padding: 2% 0%;
+    transition: 0.4s ease-out;
+    font-size: 100%;
+    color: white;
+}
+
+.login form button {
+    border: 2px solid rgb(255, 0, 0) ;
+    color: rgb(255, 0, 0);
+    width: auto;
+    border-radius: 999px;
+    padding: 2% 10%;
+    background-image: linear-gradient(to right, black 50%, red 50%, rgb(255, 17, 17));
+    background-size: 200%; 
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+.login form button:hover {
+    color: black;
+    background-position: 100%;
+    border: 2px solid black;
+    transition: 0.4s ease-out;
+}
+
+.login form .error {
+    animation: errorAnimation 1.5s;
+}
+
+
+@keyframes errorAnimation {
+
+    0% {
+        border-color: rgb(0, 0, 0);
+    }
+
+    20% {
+        border-color: red;
+    }
+
+    40% {
+        border-color: rgb(0, 0, 0);
+    }
+
+    60% {
+        border-color: red;
+
+    }
+
+    80% {
+        border-color: rgb(0, 0, 0);
+    }
+}
+
+
+
+
+
+
